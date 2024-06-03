@@ -29,6 +29,44 @@
   flex-basis: 75%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.app-bar{
+  background-color: rgb(5, 150, 60);
+  color: white;
+  display: flex;
+  align-items: flex-start;
+  width: 30%;
+  justify-content: space-between;
+  height: 30px;
+}
+
+.app-bar > p{
+  padding-left: 1em;
+}
+
+.app-bar > i{
+  padding-right: 1em;
+  padding-top: .2em;
+}
+
+nav{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 30%;
+  background-color: rgb(5, 150, 60);
+  color: white;
+}
+
+nav > ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul li{
+  text-decoration: none;
+  color: white;
 }

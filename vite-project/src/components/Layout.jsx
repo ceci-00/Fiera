@@ -9,7 +9,9 @@ export default function Layout(props) {
             </div>
             <div className="right">
                 <Nav />
+                <div className="content">
                 {props.children}
+                </div>
                 <Footer />
             </div>
         </div>
