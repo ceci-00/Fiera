@@ -6,17 +6,26 @@
   color: black;
 }
 
+#root{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  
+}
+
 .container{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   height: 100vh;
+  width: 100vw;
   background-color: whitesmoke;
 }
 
 .left{
-  flex-basis: 25%;
-  max-width: 25%;
+  flex-basis: 37%;
+  max-width: 37%;
 }
 
 .left img{
@@ -26,7 +35,7 @@
 }
 
 .right{
-  flex-basis: 75%;
+  flex-basis: 63%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -34,11 +43,11 @@
 }
 
 .app-bar{
-  background-color: rgb(5, 150, 60);
+  background-color: rgb(43, 209, 159);
   color: white;
   display: flex;
   align-items: flex-start;
-  width: 30%;
+  width: 20%;
   justify-content: space-between;
   height: 30px;
 }
@@ -56,14 +65,17 @@ nav{
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  width: 30%;
-  background-color: rgb(5, 150, 60);
+  width: 20%;
+  background-color: rgb(43, 209, 159);
   color: white;
 }
 
 nav > ul{
   list-style-type: none;
   padding: 0;
+  background-color: white;
+  flex-direction: column;
+  
 }
 
 nav > ul li{
