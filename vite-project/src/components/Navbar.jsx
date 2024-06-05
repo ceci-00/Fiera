@@ -6,12 +6,15 @@ export default function Navbar() {
     const handleOpen = () => {
         setIsOpen(!isOpen);
     };
+    const handleClose = () => {
+        setIsOpen(false);
+    };
     return (
         <>
             {
                 isOpen ? (
                     <nav>
-                        <i className="fa-solid fa-x"></i>
+                        <i className="fa-solid fa-x" onClick={handleClose}></i>
                         <ul>
                             <li>
                                 <Link to='/'>Home</Link>
